@@ -59,3 +59,17 @@ int numA = Convert.ToInt32(Console.ReadLine());
 if (numA < 1) Console.WriteLine("Вы ввел некорректное число");
 else Console.WriteLine($"Произведение чисел от 1 до {numA} равно {Product(numA)}");
 */
+
+//Задача 4
+//Напишите программу, которая выводит массив из 8 элементов, заполненный 0 и 1
+
+void arrayNew()
+{
+    int[] array = new int[8];
+    for (int i = 0; i < 8; i++)
+    {
+        array[i] = new Random().Next(0,2);
+        Console.Write(array[i] + " ");
+    }
+}
+arrayNew();

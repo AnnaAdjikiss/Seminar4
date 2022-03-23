@@ -39,3 +39,23 @@ Console.WriteLine("введите число");
 int number = Convert.ToInt32(Console.ReadLine());
 Digits(number);
 */
+
+//Задача 3
+// Написать программу, которая принимает на вход число А и выдает произведение чисел от 1 до А
+/*
+int Product(int value)
+{
+    int result = 1;
+    int i = 1;
+    while (i <= value)
+    {
+        result = result * i;
+        i++;
+    }
+    return result;
+}
+Console.WriteLine("Введите целое положительное число: ");
+int numA = Convert.ToInt32(Console.ReadLine());
+if (numA < 1) Console.WriteLine("Вы ввел некорректное число");
+else Console.WriteLine($"Произведение чисел от 1 до {numA} равно {Product(numA)}");
+*/
